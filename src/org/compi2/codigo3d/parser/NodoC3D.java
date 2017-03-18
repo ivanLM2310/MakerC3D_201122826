@@ -1,5 +1,6 @@
 package org.compi2.codigo3d.parser;
 
+
 /**
  * Clase sencilla para sintetizar información entre producciones.
  * Cuenta con un único atributo de tipo String, pero pueden agregársele
