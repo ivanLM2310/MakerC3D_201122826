@@ -8,7 +8,9 @@ public class ControlC3D {
     
     private static int temp = 0;
     private static String c3d = "";
-    
+    private static int etiqueta = 0;
+    private static String etiquetaV = "";
+    private static String etiquetaF = "";
     /**
      * Reinicia las variables estáticas relacionadas con la generación del
      * código de tres direcciones.
@@ -16,6 +18,7 @@ public class ControlC3D {
     public static void reiniciar(){
         temp = 0;
         c3d = "";
+        
     }
     
     /**
@@ -42,5 +45,35 @@ public class ControlC3D {
     public static String getC3D(){
         return c3d;
     }
+
+    public static String generaEtq()
+    {
+        return "L"+ etiqueta++;
+    }
+    
+    public static int getEtiqueta() {
+        return etiqueta;
+    }
+
+    public static void setEtiqueta(int etiqueta) {
+        ControlC3D.etiqueta = etiqueta;
+    }
+
+    public static String getEtiquetaV() {
+        return etiquetaV;
+    }
+
+    public static void setEtiquetaV(String etiquetaV) {
+        ControlC3D.etiquetaV = etiquetaV;
+    }
+
+    public static String getEtiquetaF() {
+        return etiquetaF;
+    }
+
+    public static void setEtiquetaF(String etiquetaF) {
+        ControlC3D.etiquetaF = etiquetaF;
+    }
+    
     
 }

@@ -30,6 +30,7 @@ MAYOR_Q		=">"
 MENOR_Q		="<"
 MAYOR_IGUAL_Q   =">="
 MENOR_IGUAL_Q   ="<="
+IGUAL_IGUAL   ="=="
 DIFERENTE 	="!="
 OP_OR		="||"
 OP_AND		="&&"
@@ -59,7 +60,7 @@ ENTER   = [\ \n]
 <YYINITIAL> {MENOR_IGUAL_Q} { return new Symbol(sym.MENOR_IGUAL_Q, yyline, yycolumn, null); }
 <YYINITIAL> {MAYOR_Q}	    { return new Symbol(sym.MAYOR_Q, yyline, yycolumn, null); }
 <YYINITIAL> {MENOR_Q}	    { return new Symbol(sym.MENOR_Q, yyline, yycolumn, null); }
-
+<YYINITIAL> {IGUAL_IGUAL}	    { return new Symbol(sym.IGUAL_IGUAL, yyline, yycolumn, null); }
 <YYINITIAL> {DIFERENTE}     { return new Symbol(sym.DIFERENTE, yyline, yycolumn, null); }
 
 <YYINITIAL> {OP_OR}	    { return new Symbol(sym.OP_OR, yyline, yycolumn, null); }
